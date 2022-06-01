@@ -1,0 +1,24 @@
+### Users show
+GET http://localhost:3000/users/1.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxLCJleHAiOjE2NTQxNTM3ODJ9.tuWOfBI5HuUzFOxCyP4NwaJTZmqc1OzgHvuZXDjxLpE
+
+
+### Users create (signup)
+POST http://localhost:3000/users.json
+Content-Type: application/json
+
+{
+  "name": "Test name",
+  "email": "test2@test.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+### Sessions create (login)
+POST http://localhost:3000/sessions.json
+Content-Type: application/json
+
+{
+  "email": "test1@test.com",
+  "password": "password"
+}
